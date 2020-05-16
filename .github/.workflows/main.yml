@@ -1,0 +1,19 @@
+name: "saludo desde twitch"
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  saludo-twitch:
+    runs-on: ubuntu-latest
+    name: "diga hola cuando haga push"
+    steps:
+    - name: Saludar a alguien
+      id: saludar-step
+      uses: Gioyik/github-action-test
+      with:
+        id-name: 'Octocat'
+        id-stream: '432987425'
+    - name: Get the output time
+      run: echo "The time was ${{ steps.saludar-step.outputs.saludo }}"
