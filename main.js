@@ -1,5 +1,6 @@
 function main() {
-  console.log('hola')
+  let x = 42
+  console.log(`${x}`)
 }
 
 main()
