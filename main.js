@@ -1,6 +1,6 @@
 function main() {
-  let x = 42
-  console.log(`${x}`)
+  let z = 42
+  console.log(`${z}`)
 }
 
 main()
