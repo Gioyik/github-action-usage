@@ -11,7 +11,7 @@ jobs:
     steps:
     - name: Saludar a alguien
       id: saludar-step
-      uses: Gioyik/github-action-test#master
+      uses: Gioyik/github-action-test@1.0
       with:
         id-name: 'Octocat'
         id-stream: '432987425'
